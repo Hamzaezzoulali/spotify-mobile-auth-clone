@@ -11,7 +11,6 @@ import SignupName from '../../Screens/Signup/SignupName'
 import Loginemail from '../../Screens/Login/Loginemail'
 import Login from '../../Screens/Login/Login'
 import SignupGender from '../../Screens/Signup/SignupGender';
-import Countryphonecode from '../../Screens/Signup/Countryphonecode';
 
 
 
@@ -24,7 +23,6 @@ export default function AuthNavigation() {
         <Stack.Screen name="SignupEmail" component={SignupEmail} options={{headerShown: false}}/>
         <Stack.Screen name="SignupPassword" component={SignupPassword} options={{headerShown: false}}/>
         <Stack.Screen name="SignupPhoneN" component={SignupPhoneN} options={{headerShown: false}}/>
-        <Stack.Screen name="Countryphonecode" component={Countryphonecode} options={{headerShown: false}}/>
         <Stack.Screen name="SignupGender" component={SignupGender} options={{headerShown: false}}/>
         <Stack.Screen name="SignupName" component={SignupName} options={{headerShown: false}}/>
         <Stack.Screen name="Login" component={Login} options={{headerShown: false}}/>
