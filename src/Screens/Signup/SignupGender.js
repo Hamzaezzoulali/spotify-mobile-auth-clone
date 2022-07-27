@@ -21,6 +21,7 @@ export default class SignupGender extends Component {
         Gender =="Female" ? this.setState({FemaleGender:true,MaleGender:false}):this.setState({FemaleGender:false,MaleGender:true})
         this.props.navigation.navigate("SignupName")
     }
+    
   render() {
     return (
       <Container>

@@ -108,7 +108,7 @@ const Styles = StyleSheet.create({
         width:windowWidth-30,
         flexDirection:'column',
         alignItems:'flex-start',
-        marginTop:2
+        marginTop:25
     },
     btnstyle:{
         width:"100%"

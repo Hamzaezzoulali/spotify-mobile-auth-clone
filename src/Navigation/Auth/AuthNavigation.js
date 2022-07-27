@@ -27,8 +27,6 @@ export default function AuthNavigation() {
         <Stack.Screen name="SignupName" component={SignupName} options={{headerShown: false}}/>
         <Stack.Screen name="Login" component={Login} options={{headerShown: false}}/>
         <Stack.Screen name="Loginemail" component={Loginemail} options={{headerShown: false}}/>
-      
-
       </Stack.Navigator>
     </NavigationContainer>
   )
