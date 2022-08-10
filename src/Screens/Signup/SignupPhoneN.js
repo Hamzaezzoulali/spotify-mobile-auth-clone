@@ -56,16 +56,12 @@ export default class SignupPhoneN extends Component {
     
 
     handleChangeCountry= async (text) => {
-        console.log(text)
         const Phonecodecountry = CountryCodes
         const countryfiltred =   Phonecodecountry.filter(country => country.name.toUpperCase().startsWith(text.toUpperCase()))
-        console.log(countryfiltred)
         this.setState({Phonecodecountry:countryfiltred})
-        
-        
     }
     handlesubmit =() =>{
-        
+        //Sign up Phone
     }
 
     Country_Code_value = (Code,Country) => {

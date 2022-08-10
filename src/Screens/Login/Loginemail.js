@@ -20,7 +20,7 @@ const msg ={
 
 export default class Loginemail extends Component {
     state={
-        ValidEmail: false,
+        isvalidEmail: false,
         msg : msg["init"],
         Errorinput: false
     }
@@ -37,7 +37,7 @@ export default class Loginemail extends Component {
 
     ValidEmail = (value) =>{
         this.setState({
-            ValidEmail:value
+            isvalidEmail:value
         })
     }
     
@@ -62,10 +62,11 @@ export default class Loginemail extends Component {
                 <Inputmail
                     ValidEmail={this.ValidEmail}
                     Focusinput
+                    SetValidEmail={this.ValidEmail}
                     Errormsg={this.Errormsg}
                     handlesubmit={this.handlesubmit}
                     Errorinput={this.state.Errorinput}
-                    KeyType="next"
+                    KeyType="done"
                 />
                 <Text style={[Styles.txt,{fontSize:12,fontFamily:'Sailecmed'}]}>{this.state.msg}</Text>
             </View>
@@ -73,7 +74,7 @@ export default class Loginemail extends Component {
             <View style={{width:"100%",alignItems:'center'}}>
                 <BtnNext
                     Title='Get link'
-                    Validate={this.state.ValidEmail}
+                    Validate={this.state.isvalidEmail}
                     handlesubmit={this.handlesubmit}
                     />
             </View>

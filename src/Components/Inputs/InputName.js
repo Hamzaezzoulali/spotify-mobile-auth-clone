@@ -10,12 +10,10 @@ const msg_txt ={
 }
 
 export default function InputName({
-    handlesubmit,
+    handleChange,
     KeyType
 }) {
-  const [Name,SetName] = useState('')
   const [Focus,Setfocus] = useState(false)
-  const handlechange = (text) => SetName(text) 
 
   return (
     
@@ -25,15 +23,13 @@ export default function InputName({
             color : COLORS.white ,
             backgroundColor : Focus ? COLORS.BGinputfocus : COLORS.BGinput 
           }]}
-        value={Name}
         selectionColor={COLORS.white}
         autoCapitalize='none'
         keyboardType='email-address'
         returnKeyType={KeyType}
         onFocus={() =>{Setfocus(true)}}
         onBlur={() =>{Setfocus(false)}}
-        onChangeText={(text) => handlechange(text)}
-        onSubmitEditing={()=>{handlesubmit()}} 
+        onChangeText={(text) => handleChange(text)}
     />
   )
 }

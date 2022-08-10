@@ -20,6 +20,10 @@ export default class SignupName extends Component {
     }
   
   handlesubmit = (value) =>{
+    //Create account
+  }
+
+  handleChange = value =>{
     this.setState({Name:value})
   }
   render() {
@@ -34,12 +38,12 @@ export default class SignupName extends Component {
               <View style={{width:"100%",borderBottomColor:COLORS.gray3,borderWidth:1,paddingBottom:10}}>
                     <Text style={Styles.txt}>What's your name?</Text>
                     <InputName
-                      handlesubmit={this.handlesubmit}
+                      handleChange={this.handleChange}
                       KeyType="done"
                     />
                     <Text style={[Styles.txt,{fontSize:12}]}>This appears on your Spotigy profils.</Text>
-
               </View>
+
               <View>
                   <Text style={[Styles.txt,{fontSize:12}]}>By tapping "Create account", you agree to the Spotify Terms of Use.</Text>
                   <TouchableOpacity>
@@ -49,7 +53,6 @@ export default class SignupName extends Component {
                   <TouchableOpacity>
                       <Text style={[Styles.txt,{fontWeight:'bold',fontSize:12,color:COLORS.BGbuttonsignup}]}>Privacy Policy</Text>
                   </TouchableOpacity>
-                
               </View>
 
               <View style={Styles.optionView}>

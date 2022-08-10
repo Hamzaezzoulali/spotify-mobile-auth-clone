@@ -29,23 +29,24 @@ export default class SignupEmail extends Component {
     
     SetValidEmail = (value) =>{
         this.setState({
-            ValidEmail:value
+            isvalidEmail:value
         })
     }
 
     SetValidpassword = (value) =>{
         this.setState({
-            Validpass:value
+            isvalidPassword:value
         })
     }
 
 
     handlesubmit = () => {
-        const {ValidEmail,Validpass} = this.state
-        if(ValidEmail && Validpass){
+        const {isvalidEmail,isvalidPassword} = this.state
+        if(isvalidEmail && isvalidPassword){
             this.setState({
                 msg:''
             })
+            //Login
            
         } else {
         this.setState({
