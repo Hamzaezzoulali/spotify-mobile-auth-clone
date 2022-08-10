@@ -1,5 +1,5 @@
 
-# Spotify Auth Clone with React native 
+# Spotify Mobile Auth Clone with React native 
 
 I had made this project to improve my skills in React native 
 

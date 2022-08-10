@@ -24,7 +24,8 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/Images/icon.png",
         "backgroundColor": "#121212"
-      }
+      },
+      "package": "com.hamza_49.spotifymobileauthclone"
     },
     "web": {
       "favicon": "./assets/favicon.png"
