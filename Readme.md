@@ -28,6 +28,12 @@ I had made this project to improve my skills in React native
   expo start -a //android
   expo start -i // IOS
 ```
+
+
+## Demo
+
+Click [here](https://snack.expo.dev/@hamza_49/spotify-mobile-auth-clone) to go to demo Expo Snack.
+
     
 
 

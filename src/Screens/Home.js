@@ -11,7 +11,7 @@ import Btnsignup from '../Components/Buttons/BtnSignup'
 import SignupMethods from  '../Components/Buttons/BtnSignupMethod'
 import Container from '../Theme/Container';
 
-const image = ('../../assets/Images/Back_login.jpg' );
+const image = require('../../assets/Images/Back_login.jpg' );
 
 export default class Signup extends Component {
 
@@ -19,7 +19,7 @@ export default class Signup extends Component {
   render() {
     return (
         <Container>
-            <ImageBackground style={styles.head} source={require(image)}>
+            <ImageBackground style={styles.head} source={image}>
                 <LinearGradient
                     colors={['transparent','#121212']}
                     style={styles.lingrad_style}
